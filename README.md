@@ -212,7 +212,7 @@ Dans cet exemple, nous aurons donc le test `test_getUsers_checkAuthorizedMethods
 
 Postman est ce qu'on appelle un client API. C'est un logiciel qui permet d'exécuter des requêtes HTTP vers un serveur API. Il est utilisable sur navigateur et sans compte, mais pour profiter de toutes ses fonctionnalités, le mieux est de télécharger le client lourd et d'utiliser un compte. Vous pouvez également utiliser des alternatives, comme Insomnia ou Thunder Client (qui est utilisable directement dans Visual Studio).
 
-![postman](../assets/QA/images/postman.png)
+![postman](./assets/postman.png)
 
  1. sélection de verbe HTTP
 
@@ -293,7 +293,7 @@ Le `thread group` est le point de départ de notre test. C'est ici qu'on va conf
 
 Clic droit sur le `sample test`, add, thread, group
 
-![apache jmeter thread group](../assets/QA/images/thread_group_added.jpg)
+![apache jmeter thread group](./assets/thread_group_added.jpg)
 
 Vous pourrez y configurer combien d'utilisateurs le test va simuler (`Number of threads`), le temps pour que ce nombre soit atteint (`Ramp-up period`) ainsi que le nombre de fois que ce test sera exécuté (`Loop count`).
 
@@ -317,7 +317,7 @@ Le `sampler` permet de créer un modèle de requête qui sera réutilisé durant
 
 Clic droit sur le `thread group`, add, sampler, http request
 
-![apache jmeter sampler](../assets/QA/images/empty_sampler.jpg)
+![apache jmeter sampler](./assets/empty_sampler.jpg)
 
 Vous pourrez y configurer l'url (`Server name or IP`), le port (`Port`) et l'endpoint (`Path`) utilisés par les requêtes.
 
@@ -327,7 +327,7 @@ Le `listener` permet de récolter les informations des requêtes exécutées et 
 
 Clic droit sur le `thread group`, add, listener, graph results
 
-![apache jmeter listener](../assets/QA/images/graph_result.gif)
+![apache jmeter listener](./assets/graph_result.gif)
 
 ## 5. Analyse et audit
 
@@ -367,11 +367,11 @@ Pour lancer le correcteur automatique, utilisez :
 npm run prettier --write .
 ```
 
-En savoir plus sur [eslint](https://eslint.org/docs/latest/use/core-concepts) et [prettier][https://prettier.io/docs/en/]
+En savoir plus sur [eslint](https://eslint.org/docs/latest/use/core-concepts) et [prettier](https://prettier.io/docs/en/)
 
 ### b. Audit externe de site web
 
-Si vous souhaitez connaître rapidement les performances de votre site web, vous pouvez utiliser les sites [google pagespeed insights][https://pagespeed.web.dev/] et [gtmetrix](https://gtmetrix.com/), ainsi que l'extension [lightouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk).
+Si vous souhaitez connaître rapidement les performances de votre site web, vous pouvez utiliser les sites [google pagespeed insights](https://pagespeed.web.dev/) et [gtmetrix](https://gtmetrix.com/), ainsi que l'extension [lightouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk).
 
 Les 3 vont analyser l'url renseignée et tester le site sur 5 critères :
 
